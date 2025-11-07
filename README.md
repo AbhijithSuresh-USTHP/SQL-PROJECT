@@ -5,5 +5,7 @@ Prodcuts Table
 Sales Table
 
 
+
+
 <img width="575" height="156" alt="image" src="https://github.com/user-attachments/assets/f940ec6c-38f2-48cb-9cd9-97e3460a6f4c" />
 
