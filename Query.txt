@@ -1,0 +1,21 @@
+create database project;
+use project;
+create table Products (product_id int primary key, product_name varchar(100), category varchar(50), unit_price DECIMAL(10,2));
+create table Sales (sale_id int primary key,product_id int, quantity_sold int, sale_date DATE, total_price decimal (10,2), foreign key (product_id) references products(product_id));
+insert into products values (101,"Laptop","Electronics",500.0),(102,"Smartphone","Electronics",300.0),
+(103,"Headphone","Electronics",30.0),(104,"Keyboard","Electronics",20.0),(105,"Mouse","Electronics",15.0);
+insert into sales values(1,101,5,"2024-01-01",2500.00),(2,102,3,"2024-01-02",900.00),(3,103,2,"2024-01-02",60.00),(4,104,4,"2024-01-03",80.00),(5,105,6,"2024-01-03",90.00);
+select * from products;
+select * from sales;
+--  Write a query to create a view named Total_Sales that displays the total sales amount for each product along with their names and categories.
+create view Total_Sales as (select p.product_name,p.category,s.total_price from sales s,products p where s.product_id=p.product_id);
+select * from Total_Sales;
+-- ------------------------------------------------------------------------------------------------------------------------------------------
+-- List the Top 3 Products by Revenue Contribution Percentage
+create view Total_Revenue as select sum(total_price) as "total_revenue" from sales;
+select * from Total_Revenue;
+create view Top_Revenue as select product_id,(sales.total_price/(select total_revenue from Total_Revenue))*100 as "revenue" from sales;
+create view Top_three as select product_id from Top_Revenue order by revenue desc LIMIT 3;
+select * from Top_three;
+select * from products where product_id in (select product_id from Top_three);
+ -- ------------------------------------------------------------------------------------------------------------------------------------------
