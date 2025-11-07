@@ -1,4 +1,4 @@
-Prodcuts Table
+Products Table
 
 
 <img width="497" height="163" alt="image" src="https://github.com/user-attachments/assets/db9640d5-0689-4b8c-9bc5-a913634989eb" />
