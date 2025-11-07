@@ -12,10 +12,8 @@ create view Total_Sales as (select p.product_name,p.category,s.total_price from 
 select * from Total_Sales;
 -- ------------------------------------------------------------------------------------------------------------------------------------------
 -- List the Top 3 Products by Revenue Contribution Percentage
-create view Total_Revenue as select sum(total_price) as "total_revenue" from sales;
-select * from Total_Revenue;
-create view Top_Revenue as select product_id,(sales.total_price/(select total_revenue from Total_Revenue))*100 as "revenue" from sales;
-create view Top_three as select product_id from Top_Revenue order by revenue desc LIMIT 3;
-select * from Top_three;
-select * from products where product_id in (select product_id from Top_three);
+create view Joined_two as select p.product_id, p.product_name, s.total_price from  products p, sales s where p.product_id=s.product_id;
+create view Top_Revenue as select product_name,product_id,Round((Joined_two.total_price/(select total_revenue from Total_Revenue)),2)*100 as "revenue_in_percentge" from Joined_two;
+create view Top_Three as select * from Top_Revenue order by revenue_in_percentge desc limit 3;
+select product_name,product_id, revenue as "revenue(in %)" from top_three1;
  -- ------------------------------------------------------------------------------------------------------------------------------------------
