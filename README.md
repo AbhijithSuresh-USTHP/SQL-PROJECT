@@ -11,11 +11,12 @@ Sales Table
 
 Query 1- List the Top 3 Products by Revenue Contribution Percentage
 
-<img width="1271" height="315" alt="image" src="https://github.com/user-attachments/assets/a33a4f31-ecf4-40db-a477-6de2e00f95d7" />
+<img width="1395" height="253" alt="image" src="https://github.com/user-attachments/assets/dc63ec54-28b0-43c9-9451-4b5ac1ea244c" />
+
 
 Output
 
-<img width="489" height="151" alt="image" src="https://github.com/user-attachments/assets/1115c6c1-ca48-48c4-935a-835576bbc62b" />
+<img width="462" height="152" alt="image" src="https://github.com/user-attachments/assets/0f6e987b-764e-4877-8701-04bbcec58eee" />
 
 
 Query 2 Write a query to create a view named Total_Sales that displays the total sales amount for each 
