@@ -11,7 +11,8 @@ Sales Table
 
 Query 1- List the Top 3 Products by Revenue Contribution Percentage
 
-<img width="1395" height="253" alt="image" src="https://github.com/user-attachments/assets/dc63ec54-28b0-43c9-9451-4b5ac1ea244c" />
+<img width="1343" height="277" alt="image" src="https://github.com/user-attachments/assets/e8117f9f-83d7-4568-b43a-a3f51b7a5cc6" />
+
 
 
 Output
