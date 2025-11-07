@@ -14,6 +14,7 @@ Query 1- List the Top 3 Products by Revenue Contribution Percentage
 <img width="1271" height="315" alt="image" src="https://github.com/user-attachments/assets/a33a4f31-ecf4-40db-a477-6de2e00f95d7" />
 
 Output
+
 <img width="489" height="151" alt="image" src="https://github.com/user-attachments/assets/1115c6c1-ca48-48c4-935a-835576bbc62b" />
 
 
