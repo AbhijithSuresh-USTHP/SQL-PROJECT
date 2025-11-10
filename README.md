@@ -23,7 +23,7 @@ Output
 
 
 Query 2 Write a query to create a view named Total_Sales that displays the total sales amount for each 
-product along with their names and categories.-
+product along with their names and categories
 
 <img width="1096" height="171" alt="image" src="https://github.com/user-attachments/assets/e56cd0ed-5ddf-42f1-9ef1-66f6da256d6f" />
 
